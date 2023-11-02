@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { DibujosComponent } from './componentes/dibujos/dibujos.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+import { InsertarDibujoComponent } from './componentes/insertar-dibujo/insertar-dibujo.component';
 
 const routes: Routes = [
   {
@@ -17,8 +17,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'acerca-de',
-    component: AcercaDeComponent,
+    path: 'insertarDibujos',
+    component: InsertarDibujoComponent,
     pathMatch: 'full'
   },
   {

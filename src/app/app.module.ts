@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { DibujosComponent } from './componentes/dibujos/dibujos.component';
-import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MostrarImagenesComponent } from './componentes/mostrar-imagenes/mostrar-imagenes.component';
 import { ModalVerDibujosComponent } from './componentes/modal-ver-dibujos/modal-ver-dibujos.component';
+import { InsertarDibujoComponent } from './componentes/insertar-dibujo/insertar-dibujo.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,15 +21,18 @@ import { ModalVerDibujosComponent } from './componentes/modal-ver-dibujos/modal-
     SidebarComponent,
     InicioComponent,
     DibujosComponent,
-    AcercaDeComponent,
     CarouselComponent,
     MostrarImagenesComponent,
-    ModalVerDibujosComponent
+    ModalVerDibujosComponent,
+    InsertarDibujoComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
